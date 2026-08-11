@@ -1,31 +1,52 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: manticoresoftware
+repo: upptime
+user-agent: manticoresoftware/upptime
+
+secrets: []
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Slack Community
+    url: https://slack.manticoresearch.com
+    maxRedirects: 0
+    expectedStatusCodes:
+      - 302
+  - name: Manual
+    url: https://manual.manticoresearch.com/
+  - name: Manual (dev)
+    url: https://manual.manticoresearch.com/dev/
+  - name: Playground
+    url: https://play.manticoresearch.com/
+  - name: Did You Mean Playground
+    url: https://play.manticoresearch.com/didyoumean/
+  - name: MySQL Playground
+    url: https://play.manticoresearch.com/mysql/
+  - name: Package Repository
+    url: https://repo.manticoresearch.com
+  - name: Community Forum
+    url: https://forum.manticoresearch.com
+  - name: Documentation
+    url: https://docs.manticoresearch.com
+  - name: Chat
+    url: https://chat.manticoresearch.com
+  - name: Facet Demo
+    url: https://facet.manticoresearch.com
+  - name: Image Search Demo
+    url: https://image.manticoresearch.com
+  - name: GitHub
+    url: https://github.manticoresearch.com
+  - name: Catalog Demo
+    url: https://catalog.manticoresearch.com
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /upptime
+  logoUrl: https://manticoresearch.com/images/logo.svg
+  name: Manticore Search Status
+  introTitle: "**Manticore Search** service status"
+  introMessage: Availability and response-time history for Manticore Search public services.
   navbar:
     - title: Status
-      href: /
+      href: /upptime/
+    - title: Manticore Search
+      href: https://manticoresearch.com
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+      href: https://github.com/manticoresoftware/upptime
