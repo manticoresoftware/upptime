@@ -10,32 +10,46 @@ sites:
     maxRedirects: 0
     expectedStatusCodes:
       - 302
+    __dangerous__body_down_if_text_missing: 302 Found
   - name: Manual
     url: https://manual.manticoresearch.com/
+    __dangerous__body_down_if_text_missing: Manticore Search Manual
   - name: Manual (dev)
     url: https://manual.manticoresearch.com/dev/
+    __dangerous__body_down_if_text_missing: Manticore Search Manual
   - name: Playground
     url: https://play.manticoresearch.com/
+    __dangerous__body_down_if_text_missing: Try Manticore Search online
   - name: Did You Mean Playground
     url: https://play.manticoresearch.com/didyoumean/
+    __dangerous__body_down_if_text_missing: Did you mean?
   - name: MySQL Playground
     url: https://play.manticoresearch.com/mysql/
+    __dangerous__body_down_if_text_missing: Indexing data from MySQL example
   - name: Package Repository
     url: https://repo.manticoresearch.com
+    __dangerous__body_down_if_text_missing: GPG-KEY-manticore
   - name: Community Forum
     url: https://forum.manticoresearch.com
+    __dangerous__body_down_if_text_missing: <title>Manticore</title>
   - name: Documentation
-    url: https://docs.manticoresearch.com
+    url: https://docs.manticoresearch.com/latest/html/
+    __dangerous__body_down_if_text_missing: Manticore Search latest documentation
   - name: Chat
     url: https://chat.manticoresearch.com
+    __dangerous__body_down_if_text_missing: Manticore Shop Demo
   - name: Facet Demo
     url: https://facet.manticoresearch.com
+    __dangerous__body_down_if_text_missing: Flexible Faceted Search
   - name: Image Search Demo
     url: https://image.manticoresearch.com
+    __dangerous__body_down_if_text_missing: Manticore Reverse Image Search
   - name: GitHub
     url: https://github.manticoresearch.com
+    __dangerous__body_down_if_text_missing: Manticore Github Issue Search Demo
   - name: Catalog Demo
     url: https://catalog.manticoresearch.com
+    __dangerous__body_down_if_text_missing: Manticore Catalog Demo
 
 status-website:
   baseUrl: /upptime
