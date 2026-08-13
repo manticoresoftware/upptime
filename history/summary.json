@@ -130,19 +130,19 @@
     "url": "https://forum.manticoresearch.com",
     "icon": "https://icons.duckduckgo.com/ip3/forum.manticoresearch.com.ico",
     "slug": "community-forum",
-    "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
-    "time": 795,
-    "timeDay": 644,
-    "timeWeek": 795,
-    "timeMonth": 795,
-    "timeYear": 795,
+    "status": "up",
+    "uptime": "98.20%",
+    "uptimeDay": "96.34%",
+    "uptimeWeek": "98.20%",
+    "uptimeMonth": "98.20%",
+    "uptimeYear": "98.20%",
+    "time": 819,
+    "timeDay": 741,
+    "timeWeek": 819,
+    "timeMonth": 819,
+    "timeYear": 819,
     "dailyMinutesDown": {
-      "2026-08-13": 0
+      "2026-08-13": 53
     }
   },
   {
