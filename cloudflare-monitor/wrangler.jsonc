@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "manticore-upptime-monitor",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-11",
+  "observability": {
+    "enabled": true
+  },
+  "triggers": {
+    "crons": ["* * * * *"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "manticore-upptime-monitor",
+      "database_id": "c1422bee-bf3b-4261-bca1-1f6b769c9120",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "GITHUB_OWNER": "manticoresoftware",
+    "GITHUB_REPO": "upptime"
+  }
+}

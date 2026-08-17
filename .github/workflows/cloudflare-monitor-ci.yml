@@ -1,0 +1,44 @@
+name: Cloudflare Monitor CI
+
+on:
+  push:
+    paths:
+      - cloudflare-monitor/**
+      - .github/workflows/cloudflare-monitor-ci.yml
+  pull_request:
+    paths:
+      - cloudflare-monitor/**
+      - .github/workflows/cloudflare-monitor-ci.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: cloudflare-monitor
+    steps:
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Setup Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: cloudflare-monitor/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Typecheck
+        run: npm run check
+      - name: Test
+        run: npm test
+      - name: Validate Worker bundle
+        run: npm run dry-run
