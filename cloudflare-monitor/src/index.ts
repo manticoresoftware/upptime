@@ -15,6 +15,7 @@ export interface Env {
 interface RunSummary {
   startedAt: string;
   finishedAt: string;
+  skipped?: "already-running";
   checked: number;
   up: number;
   down: number;
@@ -44,6 +45,25 @@ const setMeta = async (db: D1Database, key: string, value: string): Promise<void
 
 const deleteMeta = async (db: D1Database, key: string): Promise<void> => {
   await db.prepare("DELETE FROM monitor_meta WHERE key = ?").bind(key).run();
+};
+
+const RUN_LOCK_TTL_MS = 120_000;
+
+const acquireRunLock = async (db: D1Database, token: string, now: Date): Promise<boolean> => {
+  const staleBefore = new Date(now.getTime() - RUN_LOCK_TTL_MS).toISOString();
+  const result = await db
+    .prepare(
+      `INSERT INTO monitor_meta (key, value, updated_at) VALUES ('run_lock', ?, ?)
+       ON CONFLICT(key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at
+       WHERE monitor_meta.updated_at < ?`,
+    )
+    .bind(token, now.toISOString(), staleBefore)
+    .run();
+  return result.meta.changes === 1;
+};
+
+const releaseRunLock = async (db: D1Database, token: string): Promise<void> => {
+  await db.prepare("DELETE FROM monitor_meta WHERE key = 'run_lock' AND value = ?").bind(token).run();
 };
 
 const dispatchUpptime = async (env: Env): Promise<void> => {
@@ -124,7 +144,7 @@ const prepareStateUpdate = (
     );
 };
 
-export const runMonitor = async (env: Env, now = new Date()): Promise<RunSummary> => {
+const runMonitorUnlocked = async (env: Env, now: Date): Promise<RunSummary> => {
   const startedAt = iso(now);
   let pendingDispatch = (await getMeta(env.DB, "pending_dispatch")) === "1";
 
@@ -187,6 +207,36 @@ export const runMonitor = async (env: Env, now = new Date()): Promise<RunSummary
   await setMeta(env.DB, "last_run", JSON.stringify(summary));
   console.log(JSON.stringify({ event: "monitor-run", ...summary }));
   return summary;
+};
+
+export const runMonitor = async (env: Env, now = new Date()): Promise<RunSummary> => {
+  const lockToken = crypto.randomUUID();
+  if (!(await acquireRunLock(env.DB, lockToken, now))) {
+    const skipped: RunSummary = {
+      startedAt: iso(now),
+      finishedAt: iso(),
+      skipped: "already-running",
+      checked: 0,
+      up: 0,
+      down: 0,
+      transitions: [],
+      dispatch: "not-needed",
+      results: [],
+    };
+    console.warn(JSON.stringify({ event: "monitor-run-skipped", ...skipped }));
+    return skipped;
+  }
+
+  try {
+    return await runMonitorUnlocked(env, now);
+  } finally {
+    try {
+      await releaseRunLock(env.DB, lockToken);
+    } catch (error) {
+      // A stale lease expires automatically; do not mask a completed monitor run.
+      console.error("Failed to release monitor run lock", error);
+    }
+  }
 };
 
 const health = async (env: Env): Promise<Response> => {
