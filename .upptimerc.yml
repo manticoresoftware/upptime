@@ -50,6 +50,18 @@ sites:
   - name: Catalog Demo
     url: https://catalog.manticoresearch.com
     __dangerous__body_down_if_text_missing: Manticore Catalog Demo
+  - name: Facet Demo Search
+    url: https://facet.manticoresearch.com/healthz
+    __dangerous__body_down_if_text_missing: '"title":"Northstar Velocity Runner"'
+  - name: Catalog Search
+    url: https://catalog.manticoresearch.com/?q=Tigris&limit=20&page=1
+    __dangerous__body_down_if_text_missing: Tigris and Euphrates
+  - name: Catalog Autocomplete
+    url: https://catalog.manticoresearch.com/api/autocomplete?term=Tigris&limit=5
+    __dangerous__body_down_if_text_missing: '"suggestion": "tigris"'
+  - name: Cloudflare Monitor
+    url: https://manticore-upptime-monitor.sergey-979.workers.dev/ready
+    __dangerous__body_down_if_text_missing: '"status":"ok"'
 
 status-website:
   baseUrl: /upptime
