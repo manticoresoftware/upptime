@@ -1,6 +1,7 @@
 import { CHECKS } from "./checks";
 import { runInBatches, type CheckResult } from "./monitor";
 import { evaluateReadiness } from "./readiness";
+import { proxyUpptimeData } from "./proxy";
 import { decideState, type StoredState } from "./state";
 
 export interface Env {
@@ -209,8 +210,11 @@ const authorized = (request: Request, env: Env): boolean => {
 };
 
 export default {
-  async fetch(request: Request, env: Env): Promise<Response> {
+  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+    if (request.method === "GET" && url.pathname.startsWith("/raw/")) {
+      return (await proxyUpptimeData(request, env.GITHUB_TOKEN, ctx)) ?? new Response("Not found", { status: 404 });
+    }
     if (request.method === "GET" && url.pathname === "/health") return health(env);
     if (request.method === "GET" && url.pathname === "/ready") return ready(env);
     if (request.method === "POST" && url.pathname === "/run" && authorized(request, env)) {

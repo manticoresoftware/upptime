@@ -65,6 +65,7 @@ sites:
 
 status-website:
   baseUrl: /upptime
+  userContentBaseUrl: https://manticore-upptime-monitor.sergey-979.workers.dev/raw
   logoUrl: https://manticoresearch.com/images/logo.svg
   name: Manticore Search Status
   introTitle: "**Manticore Search** service status"

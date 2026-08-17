@@ -12,6 +12,7 @@ Cloudflare Worker that checks Manticore Search public services every minute and 
 - Checks public pages every minute and functional search transactions every five minutes.
 - Stores stable state, streaks, and a last-run heartbeat in D1.
 - Exposes `/ready`, which fails if the cron heartbeat is more than three minutes old.
+- Proxies and edge-caches only Upptime summary/graph data, avoiding unauthenticated GitHub Raw rate limits.
 - Sends `repository_dispatch` with `event_type: uptime` only after confirmed state transitions.
 - Keeps failed GitHub dispatches in an outbox flag and retries them on the next invocation.
 
@@ -82,6 +83,7 @@ Cron changes can take several minutes to propagate. Confirm at least two consecu
 
 - `GET /health` — last heartbeat and stable service states; no secrets.
 - `GET /ready` — `200` for a recent cron heartbeat, otherwise `503`; monitored by Upptime.
+- `GET /raw/manticoresoftware/upptime/master/...` — allowlisted summary and graph proxy used by the status page.
 - `POST /run` — immediate run; requires `Authorization: Bearer $ADMIN_TOKEN`.
 
 All other paths return `404`.
