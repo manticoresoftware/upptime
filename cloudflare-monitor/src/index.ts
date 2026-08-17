@@ -62,6 +62,14 @@ const acquireRunLock = async (db: D1Database, token: string, now: Date): Promise
   return result.meta.changes === 1;
 };
 
+const renewRunLock = async (db: D1Database, token: string, now: Date): Promise<boolean> => {
+  const result = await db
+    .prepare("UPDATE monitor_meta SET updated_at = ? WHERE key = 'run_lock' AND value = ?")
+    .bind(now.toISOString(), token)
+    .run();
+  return result.meta.changes === 1;
+};
+
 const releaseRunLock = async (db: D1Database, token: string): Promise<void> => {
   await db.prepare("DELETE FROM monitor_meta WHERE key = 'run_lock' AND value = ?").bind(token).run();
 };
@@ -144,7 +152,11 @@ const prepareStateUpdate = (
     );
 };
 
-const runMonitorUnlocked = async (env: Env, now: Date): Promise<RunSummary> => {
+const runMonitorUnlocked = async (
+  env: Env,
+  now: Date,
+  renewLease: () => Promise<boolean>,
+): Promise<RunSummary> => {
   const startedAt = iso(now);
   let pendingDispatch = (await getMeta(env.DB, "pending_dispatch")) === "1";
 
@@ -160,6 +172,9 @@ const runMonitorUnlocked = async (env: Env, now: Date): Promise<RunSummary> => {
 
   const checks = dueChecks(now);
   const results = await runInBatches(checks);
+  if (!(await renewLease())) {
+    throw new Error("Monitor run lease was lost before the state update");
+  }
   const states = await loadStates(env.DB);
   const transitions: string[] = [];
   const stateUpdates: D1PreparedStatement[] = [];
@@ -211,7 +226,8 @@ const runMonitorUnlocked = async (env: Env, now: Date): Promise<RunSummary> => {
 
 export const runMonitor = async (env: Env, now = new Date()): Promise<RunSummary> => {
   const lockToken = crypto.randomUUID();
-  if (!(await acquireRunLock(env.DB, lockToken, now))) {
+  const lockAcquiredAt = new Date();
+  if (!(await acquireRunLock(env.DB, lockToken, lockAcquiredAt))) {
     const skipped: RunSummary = {
       startedAt: iso(now),
       finishedAt: iso(),
@@ -228,7 +244,7 @@ export const runMonitor = async (env: Env, now = new Date()): Promise<RunSummary
   }
 
   try {
-    return await runMonitorUnlocked(env, now);
+    return await runMonitorUnlocked(env, now, () => renewRunLock(env.DB, lockToken, new Date()));
   } finally {
     try {
       await releaseRunLock(env.DB, lockToken);
