@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { parseProxyPath } from "../src/proxy";
+import { normalizedCacheKey, parseProxyPath } from "../src/proxy";
 
 describe("status data proxy allowlist", () => {
   it("allows only the master summary", () => {
@@ -18,6 +18,12 @@ describe("status data proxy allowlist", () => {
       contentPath: "graphs/catalog-demo/response-time.png",
       cacheSeconds: 300,
     });
+  });
+
+  it("normalizes query strings out of the cache key", () => {
+    const base = "https://monitor.example/raw/manticoresoftware/upptime/master/history/summary.json";
+    expect(normalizedCacheKey(new Request(`${base}?one=1`)).url).toBe(base);
+    expect(normalizedCacheKey(new Request(`${base}?two=2`)).url).toBe(base);
   });
 
   it("rejects arbitrary repository files and traversal", () => {

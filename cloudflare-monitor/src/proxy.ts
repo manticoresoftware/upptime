@@ -15,6 +15,13 @@ export const parseProxyPath = (pathname: string): ProxyTarget | null => {
   return null;
 };
 
+export const normalizedCacheKey = (request: Request): Request => {
+  const url = new URL(request.url);
+  url.search = "";
+  url.hash = "";
+  return new Request(url.toString(), { method: "GET" });
+};
+
 const responseHeaders = (upstream: Response, target: ProxyTarget): Headers => {
   const headers = new Headers({
     "Access-Control-Allow-Origin": "*",
@@ -37,7 +44,8 @@ export const proxyUpptimeData = async (
   if (!githubToken) return Response.json({ status: "unavailable" }, { status: 503 });
 
   const cache = (caches as CacheStorage & { default: Cache }).default;
-  const cached = await cache.match(request);
+  const cacheKey = normalizedCacheKey(request);
+  const cached = await cache.match(cacheKey);
   if (cached) return cached;
 
   const encodedPath = target.contentPath.split("/").map(encodeURIComponent).join("/");
@@ -61,6 +69,6 @@ export const proxyUpptimeData = async (
     status: 200,
     headers: responseHeaders(upstream, target),
   });
-  ctx.waitUntil(cache.put(request, response.clone()));
+  ctx.waitUntil(cache.put(cacheKey, response.clone()));
   return response;
 };
