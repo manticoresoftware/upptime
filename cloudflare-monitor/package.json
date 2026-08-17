@@ -9,7 +9,8 @@
     "dev": "wrangler dev --test-scheduled",
     "db:migrate:local": "wrangler d1 migrations apply manticore-upptime-monitor --local",
     "db:migrate:remote": "wrangler d1 migrations apply manticore-upptime-monitor --remote",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "dry-run": "wrangler deploy --dry-run"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "5.20260817.1",
