@@ -30,14 +30,16 @@ const getMeta = async (db: D1Database, key: string): Promise<string | null> => {
   return row?.value ?? null;
 };
 
-const setMeta = async (db: D1Database, key: string, value: string): Promise<void> => {
-  await db
+const prepareSetMeta = (db: D1Database, key: string, value: string): D1PreparedStatement =>
+  db
     .prepare(
       `INSERT INTO monitor_meta (key, value, updated_at) VALUES (?, ?, ?)
        ON CONFLICT(key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at`,
     )
-    .bind(key, value, iso())
-    .run();
+    .bind(key, value, iso());
+
+const setMeta = async (db: D1Database, key: string, value: string): Promise<void> => {
+  await prepareSetMeta(db, key, value).run();
 };
 
 const deleteMeta = async (db: D1Database, key: string): Promise<void> => {
@@ -84,15 +86,15 @@ const stateChanged = (old: StoredState | undefined, next: ReturnType<typeof deci
   old.last_error !== result.error ||
   old.status_code !== result.statusCode;
 
-const saveState = async (
+const prepareStateUpdate = (
   db: D1Database,
   result: CheckResult,
   previous: StoredState | undefined,
   decision: ReturnType<typeof decideState>,
-): Promise<void> => {
-  if (!stateChanged(previous, decision, result)) return;
+): D1PreparedStatement | null => {
+  if (!stateChanged(previous, decision, result)) return null;
   const changedAt = decision.transitioned ? iso() : previous?.last_changed_at ?? null;
-  await db
+  return db
     .prepare(
       `INSERT INTO monitor_state
        (slug, name, url, state, failure_streak, success_streak, last_changed_at, last_error, status_code, response_time_ms)
@@ -119,8 +121,7 @@ const saveState = async (
       result.error,
       result.statusCode,
       result.responseTimeMs,
-    )
-    .run();
+    );
 };
 
 export const runMonitor = async (env: Env, now = new Date()): Promise<RunSummary> => {
@@ -141,15 +142,22 @@ export const runMonitor = async (env: Env, now = new Date()): Promise<RunSummary
   const results = await runInBatches(checks);
   const states = await loadStates(env.DB);
   const transitions: string[] = [];
+  const stateUpdates: D1PreparedStatement[] = [];
   let shouldDispatch = false;
 
   for (const result of results) {
     const previous = states.get(result.slug);
     const decision = decideState(previous, result);
-    await saveState(env.DB, result, previous, decision);
+    const update = prepareStateUpdate(env.DB, result, previous, decision);
+    if (update) stateUpdates.push(update);
     if (decision.transitioned) transitions.push(`${result.slug}:${previous?.state ?? "unknown"}->${decision.state}`);
     shouldDispatch ||= decision.shouldDispatch;
   }
+
+  // Commit the transition and its outbox marker in the same D1 transaction.
+  // A crash can now cause a duplicate dispatch, but cannot silently lose one.
+  if (shouldDispatch) stateUpdates.push(prepareSetMeta(env.DB, "pending_dispatch", "1"));
+  if (stateUpdates.length > 0) await env.DB.batch(stateUpdates);
 
   let dispatch: RunSummary["dispatch"] = "not-needed";
   if (!env.GITHUB_TOKEN) {

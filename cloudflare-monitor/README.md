@@ -11,6 +11,7 @@ Cloudflare Worker that checks Manticore Search public services every minute and 
 - Requires two consecutive successes before recovery.
 - Checks public pages every minute and functional search transactions every five minutes.
 - Stores stable state, streaks, and a last-run heartbeat in D1.
+- Commits confirmed state transitions and the dispatch outbox marker in one D1 transaction.
 - Exposes `/ready`, which fails if the cron heartbeat is more than three minutes old.
 - Proxies and edge-caches only Upptime summary/graph data, avoiding unauthenticated GitHub Raw rate limits.
 - Sends `repository_dispatch` with `event_type: uptime` only after confirmed state transitions.
