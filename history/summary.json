@@ -22,37 +22,40 @@
     "url": "https://manual.manticoresearch.com/",
     "icon": "https://icons.duckduckgo.com/ip3/manual.manticoresearch.com.ico",
     "slug": "manual",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.98%",
+    "uptimeDay": "99.88%",
+    "uptimeWeek": "99.98%",
+    "uptimeMonth": "99.98%",
+    "uptimeYear": "99.98%",
     "time": 1047,
     "timeDay": 1092,
     "timeWeek": 1047,
     "timeMonth": 1047,
     "timeYear": 1047,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-18": 2
+    }
   },
   {
     "name": "Manual (dev)",
     "url": "https://manual.manticoresearch.com/dev/",
     "icon": "https://icons.duckduckgo.com/ip3/manual.manticoresearch.com.ico",
     "slug": "manual-dev",
-    "status": "up",
-    "uptime": "99.19%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "99.19%",
-    "uptimeMonth": "99.19%",
-    "uptimeYear": "99.19%",
+    "status": "down",
+    "uptime": "99.21%",
+    "uptimeDay": "99.90%",
+    "uptimeWeek": "99.21%",
+    "uptimeMonth": "99.21%",
+    "uptimeYear": "99.21%",
     "time": 993,
     "timeDay": 1060,
     "timeWeek": 993,
     "timeMonth": 993,
     "timeYear": 993,
     "dailyMinutesDown": {
-      "2026-08-14": 77
+      "2026-08-14": 77,
+      "2026-08-18": 1
     }
   },
   {
@@ -78,36 +81,40 @@
     "url": "https://play.manticoresearch.com/didyoumean/",
     "icon": "https://icons.duckduckgo.com/ip3/play.manticoresearch.com.ico",
     "slug": "did-you-mean-playground",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.99%",
+    "uptimeDay": "99.92%",
+    "uptimeWeek": "99.99%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
     "time": 1041,
     "timeDay": 1042,
     "timeWeek": 1041,
     "timeMonth": 1041,
     "timeYear": 1041,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-18": 1
+    }
   },
   {
     "name": "MySQL Playground",
     "url": "https://play.manticoresearch.com/mysql/",
     "icon": "https://icons.duckduckgo.com/ip3/play.manticoresearch.com.ico",
     "slug": "my-sql-playground",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.99%",
+    "uptimeDay": "99.94%",
+    "uptimeWeek": "99.99%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
     "time": 1036,
     "timeDay": 1046,
     "timeWeek": 1036,
     "timeMonth": 1036,
     "timeYear": 1036,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-18": 1
+    }
   },
   {
     "name": "Package Repository",
@@ -132,19 +139,20 @@
     "url": "https://forum.manticoresearch.com",
     "icon": "https://icons.duckduckgo.com/ip3/forum.manticoresearch.com.ico",
     "slug": "community-forum",
-    "status": "up",
-    "uptime": "99.44%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "99.44%",
-    "uptimeMonth": "99.44%",
-    "uptimeYear": "99.44%",
-    "time": 866,
-    "timeDay": 856,
-    "timeWeek": 866,
-    "timeMonth": 866,
-    "timeYear": 866,
+    "status": "down",
+    "uptime": "99.46%",
+    "uptimeDay": "99.95%",
+    "uptimeWeek": "99.46%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.46%",
+    "time": 839,
+    "timeDay": 741,
+    "timeWeek": 839,
+    "timeMonth": 839,
+    "timeYear": 839,
     "dailyMinutesDown": {
-      "2026-08-13": 53
+      "2026-08-13": 53,
+      "2026-08-18": 1
     }
   },
   {
@@ -225,11 +233,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/github.manticoresearch.com.ico",
     "slug": "git-hub",
     "status": "up",
-    "uptime": "97.98%",
+    "uptime": "98.07%",
     "uptimeDay": "100.00%",
-    "uptimeWeek": "97.98%",
-    "uptimeMonth": "97.98%",
-    "uptimeYear": "97.98%",
+    "uptimeWeek": "98.07%",
+    "uptimeMonth": "98.07%",
+    "uptimeYear": "98.07%",
     "time": 3409,
     "timeDay": 481,
     "timeWeek": 3409,
@@ -244,9 +252,9 @@
     "url": "https://catalog.manticoresearch.com",
     "icon": "https://icons.duckduckgo.com/ip3/catalog.manticoresearch.com.ico",
     "slug": "catalog-demo",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.97%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -255,7 +263,9 @@
     "timeWeek": 867,
     "timeMonth": 867,
     "timeYear": 867,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-18": 0
+    }
   },
   {
     "name": "Facet Demo Search",
@@ -280,18 +290,20 @@
     "url": "https://catalog.manticoresearch.com/?q=Tigris&limit=20&page=1",
     "icon": "https://icons.duckduckgo.com/ip3/catalog.manticoresearch.com.ico",
     "slug": "catalog-search",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.98%",
+    "uptimeDay": "99.98%",
+    "uptimeWeek": "99.98%",
+    "uptimeMonth": "99.98%",
+    "uptimeYear": "99.98%",
     "time": 909,
     "timeDay": 909,
     "timeWeek": 909,
     "timeMonth": 909,
     "timeYear": 909,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-18": 0
+    }
   },
   {
     "name": "Catalog Autocomplete",
