@@ -254,20 +254,20 @@
     "url": "https://catalog.manticoresearch.com",
     "icon": "https://icons.duckduckgo.com/ip3/catalog.manticoresearch.com.ico",
     "slug": "catalog-demo",
-    "status": "down",
+    "status": "up",
     "uptime": "99.72%",
-    "uptimeDay": "99.38%",
+    "uptimeDay": "99.33%",
     "uptimeWeek": "99.67%",
     "uptimeMonth": "99.72%",
     "uptimeYear": "99.72%",
-    "time": 890,
-    "timeDay": 1041,
-    "timeWeek": 894,
-    "timeMonth": 890,
-    "timeYear": 890,
+    "time": 1397,
+    "timeDay": 4512,
+    "timeWeek": 1538,
+    "timeMonth": 1397,
+    "timeYear": 1397,
     "dailyMinutesDown": {
       "2026-08-18": 24,
-      "2026-08-19": 9
+      "2026-08-19": 10
     }
   },
   {
@@ -293,20 +293,20 @@
     "url": "https://catalog.manticoresearch.com/?q=Tigris&limit=20&page=1",
     "icon": "https://icons.duckduckgo.com/ip3/catalog.manticoresearch.com.ico",
     "slug": "catalog-search",
-    "status": "down",
-    "uptime": "99.12%",
-    "uptimeDay": "99.77%",
-    "uptimeWeek": "99.12%",
-    "uptimeMonth": "99.12%",
-    "uptimeYear": "99.12%",
-    "time": 1116,
-    "timeDay": 1032,
-    "timeWeek": 1116,
-    "timeMonth": 1116,
-    "timeYear": 1116,
+    "status": "up",
+    "uptime": "99.09%",
+    "uptimeDay": "99.72%",
+    "uptimeWeek": "99.09%",
+    "uptimeMonth": "99.09%",
+    "uptimeYear": "99.09%",
+    "time": 1407,
+    "timeDay": 1945,
+    "timeWeek": 1407,
+    "timeMonth": 1407,
+    "timeYear": 1407,
     "dailyMinutesDown": {
       "2026-08-18": 24,
-      "2026-08-19": 3
+      "2026-08-19": 4
     }
   },
   {
