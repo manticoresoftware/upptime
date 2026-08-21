@@ -1,7 +1,7 @@
 url: https://catalog.manticoresearch.com/?q=Tigris&limit=20&page=1
-status: up
-code: 200
-responseTime: 757
-lastUpdated: 2026-08-20T23:25:12.999Z
+status: down
+code: 504
+responseTime: 10378
+lastUpdated: 2026-08-21T15:36:58.518Z
 startTime: 2026-08-17T15:10:44.158Z
 generator: Upptime <https://github.com/upptime/upptime>
