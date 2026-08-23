@@ -1,7 +1,7 @@
 url: https://play.manticoresearch.com/
-status: up
-code: 200
-responseTime: 748
-lastUpdated: 2026-08-22T23:20:26.022Z
+status: down
+code: 502
+responseTime: 367
+lastUpdated: 2026-08-23T16:42:38.557Z
 startTime: 2026-08-11T11:06:27.494Z
 generator: Upptime <https://github.com/upptime/upptime>
