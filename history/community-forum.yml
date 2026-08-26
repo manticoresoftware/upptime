@@ -1,7 +1,7 @@
 url: https://forum.manticoresearch.com
-status: up
-code: 200
-responseTime: 954
-lastUpdated: 2026-08-26T14:34:39.473Z
+status: down
+code: 500
+responseTime: 457
+lastUpdated: 2026-08-26T17:55:15.300Z
 startTime: 2026-08-11T11:06:31.149Z
 generator: Upptime <https://github.com/upptime/upptime>
