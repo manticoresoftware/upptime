@@ -22,10 +22,10 @@
     "url": "https://manual.manticoresearch.com/",
     "icon": "https://icons.duckduckgo.com/ip3/manual.manticoresearch.com.ico",
     "slug": "manual",
-    "status": "up",
+    "status": "down",
     "uptime": "99.64%",
-    "uptimeDay": "98.71%",
-    "uptimeWeek": "99.59%",
+    "uptimeDay": "98.75%",
+    "uptimeWeek": "99.60%",
     "uptimeMonth": "99.64%",
     "uptimeYear": "99.64%",
     "time": 1012,
@@ -37,7 +37,7 @@
       "2026-08-18": 36,
       "2026-08-20": 23,
       "2026-08-25": 17,
-      "2026-08-26": 2
+      "2026-08-26": 1
     }
   },
   {
@@ -45,10 +45,10 @@
     "url": "https://manual.manticoresearch.com/dev/",
     "icon": "https://icons.duckduckgo.com/ip3/manual.manticoresearch.com.ico",
     "slug": "manual-dev",
-    "status": "up",
+    "status": "down",
     "uptime": "99.29%",
-    "uptimeDay": "98.85%",
-    "uptimeWeek": "99.61%",
+    "uptimeDay": "98.78%",
+    "uptimeWeek": "99.60%",
     "uptimeMonth": "99.29%",
     "uptimeYear": "99.29%",
     "time": 978,
@@ -60,7 +60,8 @@
       "2026-08-14": 77,
       "2026-08-18": 35,
       "2026-08-20": 22,
-      "2026-08-25": 17
+      "2026-08-25": 17,
+      "2026-08-26": 1
     }
   },
   {
@@ -112,11 +113,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/play.manticoresearch.com.ico",
     "slug": "my-sql-playground",
     "status": "up",
-    "uptime": "96.13%",
+    "uptime": "96.14%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "92.01%",
-    "uptimeMonth": "96.13%",
-    "uptimeYear": "96.13%",
+    "uptimeMonth": "96.14%",
+    "uptimeYear": "96.14%",
     "time": 961,
     "timeDay": 445,
     "timeWeek": 841,
@@ -152,21 +153,22 @@
     "url": "https://forum.manticoresearch.com",
     "icon": "https://icons.duckduckgo.com/ip3/forum.manticoresearch.com.ico",
     "slug": "community-forum",
-    "status": "up",
+    "status": "down",
     "uptime": "99.56%",
-    "uptimeDay": "98.86%",
-    "uptimeWeek": "99.84%",
+    "uptimeDay": "98.81%",
+    "uptimeWeek": "99.83%",
     "uptimeMonth": "99.56%",
     "uptimeYear": "99.56%",
-    "time": 1580,
-    "timeDay": 715,
-    "timeWeek": 2048,
-    "timeMonth": 1580,
-    "timeYear": 1580,
+    "time": 1556,
+    "timeDay": 704,
+    "timeWeek": 1989,
+    "timeMonth": 1556,
+    "timeYear": 1556,
     "dailyMinutesDown": {
       "2026-08-13": 53,
       "2026-08-18": 24,
-      "2026-08-25": 16
+      "2026-08-25": 16,
+      "2026-08-26": 1
     }
   },
   {
@@ -249,11 +251,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/github.manticoresearch.com.ico",
     "slug": "git-hub",
     "status": "up",
-    "uptime": "99.10%",
+    "uptime": "99.11%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.10%",
-    "uptimeYear": "99.10%",
+    "uptimeMonth": "99.11%",
+    "uptimeYear": "99.11%",
     "time": 2299,
     "timeDay": 432,
     "timeWeek": 484,
@@ -268,10 +270,10 @@
     "url": "https://catalog.manticoresearch.com",
     "icon": "https://icons.duckduckgo.com/ip3/catalog.manticoresearch.com.ico",
     "slug": "catalog-demo",
-    "status": "up",
+    "status": "down",
     "uptime": "99.35%",
-    "uptimeDay": "98.87%",
-    "uptimeWeek": "98.87%",
+    "uptimeDay": "98.84%",
+    "uptimeWeek": "98.86%",
     "uptimeMonth": "99.35%",
     "uptimeYear": "99.35%",
     "time": 1602,
@@ -283,7 +285,8 @@
       "2026-08-18": 24,
       "2026-08-20": 69,
       "2026-08-21": 29,
-      "2026-08-25": 16
+      "2026-08-25": 16,
+      "2026-08-26": 0
     }
   },
   {
@@ -309,9 +312,9 @@
     "url": "https://catalog.manticoresearch.com/?q=Tigris&limit=20&page=1",
     "icon": "https://icons.duckduckgo.com/ip3/catalog.manticoresearch.com.ico",
     "slug": "catalog-search",
-    "status": "up",
+    "status": "down",
     "uptime": "98.79%",
-    "uptimeDay": "98.89%",
+    "uptimeDay": "98.87%",
     "uptimeWeek": "98.73%",
     "uptimeMonth": "98.79%",
     "uptimeYear": "98.79%",
@@ -324,7 +327,8 @@
       "2026-08-18": 24,
       "2026-08-20": 86,
       "2026-08-21": 25,
-      "2026-08-25": 16
+      "2026-08-25": 16,
+      "2026-08-26": 0
     }
   },
   {
