@@ -253,21 +253,21 @@
     "url": "https://github.manticoresearch.com",
     "icon": "https://icons.duckduckgo.com/ip3/github.manticoresearch.com.ico",
     "slug": "git-hub",
-    "status": "down",
-    "uptime": "98.53%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "98.04%",
-    "uptimeMonth": "98.53%",
-    "uptimeYear": "98.53%",
-    "time": 4220,
-    "timeDay": 11245,
-    "timeWeek": 6041,
-    "timeMonth": 4220,
-    "timeYear": 4220,
+    "status": "up",
+    "uptime": "98.52%",
+    "uptimeDay": "99.85%",
+    "uptimeWeek": "98.02%",
+    "uptimeMonth": "98.52%",
+    "uptimeYear": "98.52%",
+    "time": 4108,
+    "timeDay": 7715,
+    "timeWeek": 5682,
+    "timeMonth": 4108,
+    "timeYear": 4108,
     "dailyMinutesDown": {
       "2026-08-15": 192,
       "2026-08-28": 197,
-      "2026-08-29": 0
+      "2026-08-29": 2
     }
   },
   {
