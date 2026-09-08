@@ -1,7 +1,7 @@
 url: https://catalog.manticoresearch.com/api/autocomplete?term=Tigris&limit=5
 status: up
 code: 200
-responseTime: 467
-lastUpdated: 2026-09-07T00:43:37.670Z
+responseTime: 405
+lastUpdated: 2026-09-08T00:56:18.691Z
 startTime: 2026-08-17T15:10:46.905Z
 generator: Upptime <https://github.com/upptime/upptime>
