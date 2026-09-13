@@ -22,24 +22,24 @@
     "url": "https://manual.manticoresearch.com/",
     "icon": "https://icons.duckduckgo.com/ip3/manual.manticoresearch.com.ico",
     "slug": "manual",
-    "status": "down",
-    "uptime": "99.43%",
-    "uptimeDay": "98.89%",
-    "uptimeWeek": "99.84%",
-    "uptimeMonth": "99.38%",
-    "uptimeYear": "99.43%",
-    "time": 1021,
-    "timeDay": 689,
-    "timeWeek": 931,
-    "timeMonth": 1025,
-    "timeYear": 1021,
+    "status": "up",
+    "uptime": "99.39%",
+    "uptimeDay": "97.79%",
+    "uptimeWeek": "99.68%",
+    "uptimeMonth": "99.34%",
+    "uptimeYear": "99.39%",
+    "time": 1023,
+    "timeDay": 843,
+    "timeWeek": 956,
+    "timeMonth": 1027,
+    "timeYear": 1023,
     "dailyMinutesDown": {
       "2026-08-18": 36,
       "2026-08-20": 23,
       "2026-08-25": 17,
       "2026-08-26": 90,
       "2026-08-27": 91,
-      "2026-09-13": 16
+      "2026-09-13": 32
     }
   },
   {
@@ -47,17 +47,17 @@
     "url": "https://manual.manticoresearch.com/dev/",
     "icon": "https://icons.duckduckgo.com/ip3/manual.manticoresearch.com.ico",
     "slug": "manual-dev",
-    "status": "down",
-    "uptime": "99.16%",
-    "uptimeDay": "98.91%",
-    "uptimeWeek": "99.84%",
-    "uptimeMonth": "99.09%",
-    "uptimeYear": "99.16%",
-    "time": 1037,
-    "timeDay": 639,
-    "timeWeek": 901,
-    "timeMonth": 1041,
-    "timeYear": 1037,
+    "status": "up",
+    "uptime": "99.13%",
+    "uptimeDay": "97.81%",
+    "uptimeWeek": "99.69%",
+    "uptimeMonth": "99.06%",
+    "uptimeYear": "99.13%",
+    "time": 1038,
+    "timeDay": 810,
+    "timeWeek": 929,
+    "timeMonth": 1043,
+    "timeYear": 1038,
     "dailyMinutesDown": {
       "2026-08-14": 77,
       "2026-08-18": 35,
@@ -66,7 +66,7 @@
       "2026-08-26": 90,
       "2026-08-27": 92,
       "2026-09-02": 50,
-      "2026-09-13": 16
+      "2026-09-13": 32
     }
   },
   {
@@ -75,11 +75,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/play.manticoresearch.com.ico",
     "slug": "playground",
     "status": "down",
-    "uptime": "99.20%",
-    "uptimeDay": "75.56%",
-    "uptimeWeek": "96.51%",
-    "uptimeMonth": "99.14%",
-    "uptimeYear": "99.20%",
+    "uptime": "99.17%",
+    "uptimeDay": "74.45%",
+    "uptimeWeek": "96.35%",
+    "uptimeMonth": "99.10%",
+    "uptimeYear": "99.17%",
     "time": 946,
     "timeDay": 3013,
     "timeWeek": 1531,
@@ -87,7 +87,7 @@
     "timeYear": 946,
     "dailyMinutesDown": {
       "2026-08-20": 26,
-      "2026-09-13": 353
+      "2026-09-13": 369
     }
   },
   {
@@ -96,11 +96,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/play.manticoresearch.com.ico",
     "slug": "did-you-mean-playground",
     "status": "down",
-    "uptime": "97.24%",
-    "uptimeDay": "66.86%",
-    "uptimeWeek": "95.27%",
-    "uptimeMonth": "97.01%",
-    "uptimeYear": "97.24%",
+    "uptime": "97.21%",
+    "uptimeDay": "65.76%",
+    "uptimeWeek": "95.11%",
+    "uptimeMonth": "96.98%",
+    "uptimeYear": "97.21%",
     "time": 992,
     "timeDay": 962,
     "timeWeek": 912,
@@ -112,7 +112,7 @@
       "2026-08-24": 741,
       "2026-08-23": 39,
       "2026-09-12": 22,
-      "2026-09-13": 455
+      "2026-09-13": 471
     }
   },
   {
@@ -121,11 +121,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/play.manticoresearch.com.ico",
     "slug": "my-sql-playground",
     "status": "down",
-    "uptime": "97.30%",
-    "uptimeDay": "68.74%",
-    "uptimeWeek": "95.53%",
-    "uptimeMonth": "97.08%",
-    "uptimeYear": "97.30%",
+    "uptime": "97.27%",
+    "uptimeDay": "67.64%",
+    "uptimeWeek": "95.38%",
+    "uptimeMonth": "97.04%",
+    "uptimeYear": "97.27%",
     "time": 1189,
     "timeDay": 5567,
     "timeWeek": 2067,
@@ -136,7 +136,7 @@
       "2026-08-20": 25,
       "2026-08-24": 741,
       "2026-08-23": 39,
-      "2026-09-13": 450
+      "2026-09-13": 466
     }
   },
   {
@@ -286,11 +286,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/catalog.manticoresearch.com.ico",
     "slug": "catalog-demo",
     "status": "down",
-    "uptime": "97.36%",
-    "uptimeDay": "99.94%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "97.14%",
-    "uptimeYear": "97.36%",
+    "uptime": "97.32%",
+    "uptimeDay": "98.84%",
+    "uptimeWeek": "99.83%",
+    "uptimeMonth": "97.10%",
+    "uptimeYear": "97.32%",
     "time": 1283,
     "timeDay": 551,
     "timeWeek": 871,
@@ -305,7 +305,7 @@
       "2026-08-27": 91,
       "2026-09-01": 542,
       "2026-08-31": 394,
-      "2026-09-13": 1
+      "2026-09-13": 17
     }
   },
   {
@@ -332,11 +332,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/catalog.manticoresearch.com.ico",
     "slug": "catalog-search",
     "status": "down",
-    "uptime": "96.43%",
-    "uptimeDay": "99.96%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "96.43%",
-    "uptimeYear": "96.43%",
+    "uptime": "96.39%",
+    "uptimeDay": "98.86%",
+    "uptimeWeek": "99.84%",
+    "uptimeMonth": "96.39%",
+    "uptimeYear": "96.39%",
     "time": 1410,
     "timeDay": 569,
     "timeWeek": 809,
@@ -351,7 +351,7 @@
       "2026-08-27": 91,
       "2026-09-01": 542,
       "2026-08-31": 504,
-      "2026-09-13": 1
+      "2026-09-13": 16
     }
   },
   {
@@ -360,11 +360,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/catalog.manticoresearch.com.ico",
     "slug": "catalog-autocomplete",
     "status": "down",
-    "uptime": "97.02%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "97.02%",
-    "uptimeYear": "97.02%",
+    "uptime": "96.98%",
+    "uptimeDay": "98.87%",
+    "uptimeWeek": "99.84%",
+    "uptimeMonth": "96.98%",
+    "uptimeYear": "96.98%",
     "time": 763,
     "timeDay": 378,
     "timeWeek": 455,
@@ -375,7 +375,7 @@
       "2026-08-21": 22,
       "2026-09-01": 542,
       "2026-08-31": 504,
-      "2026-09-13": 0
+      "2026-09-13": 16
     }
   },
   {
@@ -386,7 +386,7 @@
     "status": "up",
     "uptime": "98.02%",
     "uptimeDay": "100.00%",
-    "uptimeWeek": "95.64%",
+    "uptimeWeek": "95.80%",
     "uptimeMonth": "98.02%",
     "uptimeYear": "98.02%",
     "time": 268,
