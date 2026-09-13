@@ -73,11 +73,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/play.manticoresearch.com.ico",
     "slug": "playground",
     "status": "down",
-    "uptime": "99.82%",
-    "uptimeDay": "95.88%",
-    "uptimeWeek": "99.41%",
-    "uptimeMonth": "99.81%",
-    "uptimeYear": "99.82%",
+    "uptime": "99.81%",
+    "uptimeDay": "95.42%",
+    "uptimeWeek": "99.35%",
+    "uptimeMonth": "99.79%",
+    "uptimeYear": "99.81%",
     "time": 832,
     "timeDay": 1659,
     "timeWeek": 1008,
@@ -85,7 +85,7 @@
     "timeYear": 832,
     "dailyMinutesDown": {
       "2026-08-20": 26,
-      "2026-09-13": 60
+      "2026-09-13": 66
     }
   },
   {
@@ -94,11 +94,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/play.manticoresearch.com.ico",
     "slug": "did-you-mean-playground",
     "status": "down",
-    "uptime": "98.01%",
-    "uptimeDay": "92.49%",
-    "uptimeWeek": "98.93%",
-    "uptimeMonth": "97.86%",
-    "uptimeYear": "98.01%",
+    "uptime": "97.99%",
+    "uptimeDay": "92.03%",
+    "uptimeWeek": "98.86%",
+    "uptimeMonth": "97.84%",
+    "uptimeYear": "97.99%",
     "time": 992,
     "timeDay": 962,
     "timeWeek": 912,
@@ -110,7 +110,7 @@
       "2026-08-24": 741,
       "2026-08-23": 39,
       "2026-09-12": 22,
-      "2026-09-13": 86
+      "2026-09-13": 93
     }
   },
   {
@@ -119,11 +119,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/play.manticoresearch.com.ico",
     "slug": "my-sql-playground",
     "status": "down",
-    "uptime": "98.06%",
-    "uptimeDay": "94.37%",
-    "uptimeWeek": "99.20%",
-    "uptimeMonth": "97.92%",
-    "uptimeYear": "98.06%",
+    "uptime": "98.05%",
+    "uptimeDay": "93.91%",
+    "uptimeWeek": "99.13%",
+    "uptimeMonth": "97.91%",
+    "uptimeYear": "98.05%",
     "time": 1189,
     "timeDay": 5567,
     "timeWeek": 2067,
@@ -134,7 +134,7 @@
       "2026-08-20": 25,
       "2026-08-24": 741,
       "2026-08-23": 39,
-      "2026-09-13": 81
+      "2026-09-13": 88
     }
   },
   {
@@ -161,11 +161,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/forum.manticoresearch.com.ico",
     "slug": "community-forum",
     "status": "up",
-    "uptime": "99.10%",
+    "uptime": "99.11%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.04%",
-    "uptimeYear": "99.10%",
+    "uptimeYear": "99.11%",
     "time": 1449,
     "timeDay": 736,
     "timeWeek": 823,
