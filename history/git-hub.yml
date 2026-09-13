@@ -1,7 +1,7 @@
 url: https://github.manticoresearch.com
-status: up
-code: 200
-responseTime: 433
-lastUpdated: 2026-09-13T00:38:49.867Z
+status: down
+code: 504
+responseTime: 28911
+lastUpdated: 2026-09-13T08:40:21.386Z
 startTime: 2026-08-11T11:06:35.291Z
 generator: Upptime <https://github.com/upptime/upptime>
