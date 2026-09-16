@@ -1,7 +1,7 @@
 url: https://manticore-upptime-monitor.sergey-979.workers.dev/ready
-status: up
-code: 200
-responseTime: 266
-lastUpdated: 2026-09-16T01:08:14.173Z
+status: down
+code: 503
+responseTime: 215
+lastUpdated: 2026-09-16T15:30:21.638Z
 startTime: 2026-08-17T15:10:49.206Z
 generator: Upptime <https://github.com/upptime/upptime>
