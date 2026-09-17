@@ -1,7 +1,7 @@
 url: https://facet.manticoresearch.com/healthz
-status: up
-code: 200
-responseTime: 479
-lastUpdated: 2026-09-17T01:06:14.081Z
+status: down
+code: 504
+responseTime: 19779
+lastUpdated: 2026-09-17T07:34:07.741Z
 startTime: 2026-08-17T15:10:41.595Z
 generator: Upptime <https://github.com/upptime/upptime>
