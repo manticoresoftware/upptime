@@ -425,16 +425,16 @@
     "url": "https://manticore-upptime-monitor.sergey-979.workers.dev/ready",
     "icon": "https://icons.duckduckgo.com/ip3/manticore-upptime-monitor.sergey-979.workers.dev.ico",
     "slug": "cloudflare-monitor",
-    "status": "down",
+    "status": "up",
     "uptime": "98.44%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "97.77%",
+    "uptimeDay": "99.89%",
+    "uptimeWeek": "99.98%",
+    "uptimeMonth": "97.76%",
     "uptimeYear": "98.44%",
     "time": 262,
-    "timeDay": 398,
-    "timeWeek": 286,
-    "timeMonth": 269,
+    "timeDay": 369,
+    "timeWeek": 288,
+    "timeMonth": 270,
     "timeYear": 262,
     "dailyMinutesDown": {
       "2026-09-06": 480,
@@ -442,7 +442,7 @@
       "2026-09-09": 181,
       "2026-09-10": 84,
       "2026-09-16": 212,
-      "2026-09-30": 0
+      "2026-09-30": 2
     }
   }
 ]
