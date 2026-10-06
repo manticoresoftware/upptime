@@ -145,11 +145,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/play.manticoresearch.com.ico",
     "slug": "my-sql-playground",
     "status": "up",
-    "uptime": "95.33%",
+    "uptime": "95.34%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "88.46%",
     "uptimeMonth": "93.23%",
-    "uptimeYear": "95.33%",
+    "uptimeYear": "95.34%",
     "time": 1129,
     "timeDay": 1282,
     "timeWeek": 1108,
@@ -254,20 +254,21 @@
     "url": "https://facet.manticoresearch.com",
     "icon": "https://icons.duckduckgo.com/ip3/facet.manticoresearch.com.ico",
     "slug": "facet-demo",
-    "status": "up",
+    "status": "down",
     "uptime": "99.92%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.90%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "99.96%",
     "uptimeYear": "99.92%",
-    "time": 1227,
-    "timeDay": 1468,
-    "timeWeek": 1292,
-    "timeMonth": 1188,
-    "timeYear": 1227,
+    "time": 1999,
+    "timeDay": 25655,
+    "timeWeek": 7361,
+    "timeMonth": 2662,
+    "timeYear": 1999,
     "dailyMinutesDown": {
       "2026-08-19": 46,
-      "2026-09-18": 18
+      "2026-09-18": 18,
+      "2026-10-06": 1
     }
   },
   {
@@ -358,11 +359,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/facet.manticoresearch.com.ico",
     "slug": "facet-demo-search",
     "status": "up",
-    "uptime": "99.89%",
-    "uptimeDay": "99.43%",
-    "uptimeWeek": "99.92%",
-    "uptimeMonth": "99.82%",
-    "uptimeYear": "99.89%",
+    "uptime": "99.90%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "99.84%",
+    "uptimeYear": "99.90%",
     "time": 1257,
     "timeDay": 9399,
     "timeWeek": 3509,
@@ -370,8 +371,7 @@
     "timeYear": 1257,
     "dailyMinutesDown": {
       "2026-09-17": 52,
-      "2026-09-18": 18,
-      "2026-10-06": 8
+      "2026-09-18": 18
     }
   },
   {
