@@ -233,21 +233,21 @@
     "url": "https://chat.manticoresearch.com",
     "icon": "https://icons.duckduckgo.com/ip3/chat.manticoresearch.com.ico",
     "slug": "chat",
-    "status": "down",
-    "uptime": "99.91%",
-    "uptimeDay": "99.78%",
-    "uptimeWeek": "99.97%",
-    "uptimeMonth": "99.83%",
-    "uptimeYear": "99.91%",
-    "time": 1550,
-    "timeDay": 26457,
-    "timeWeek": 7063,
-    "timeMonth": 2388,
-    "timeYear": 1550,
+    "status": "up",
+    "uptime": "99.90%",
+    "uptimeDay": "99.64%",
+    "uptimeWeek": "99.95%",
+    "uptimeMonth": "99.82%",
+    "uptimeYear": "99.90%",
+    "time": 1530,
+    "timeDay": 17730,
+    "timeWeek": 6309,
+    "timeMonth": 2328,
+    "timeYear": 1530,
     "dailyMinutesDown": {
       "2026-09-17": 39,
       "2026-09-18": 34,
-      "2026-10-06": 3
+      "2026-10-06": 5
     }
   },
   {
@@ -360,9 +360,9 @@
     "slug": "facet-demo-search",
     "status": "down",
     "uptime": "99.90%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.84%",
+    "uptimeDay": "99.58%",
+    "uptimeWeek": "99.94%",
+    "uptimeMonth": "99.83%",
     "uptimeYear": "99.90%",
     "time": 1133,
     "timeDay": 9993,
@@ -372,7 +372,7 @@
     "dailyMinutesDown": {
       "2026-09-17": 52,
       "2026-09-18": 18,
-      "2026-10-06": 0
+      "2026-10-06": 6
     }
   },
   {
