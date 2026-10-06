@@ -1,7 +1,7 @@
 url: https://facet.manticoresearch.com
-status: up
-code: 200
-responseTime: 1468
-lastUpdated: 2026-10-06T02:43:05.224Z
+status: down
+code: 525
+responseTime: 49841
+lastUpdated: 2026-10-06T22:45:05.344Z
 startTime: 2026-08-11T11:06:33.254Z
 generator: Upptime <https://github.com/upptime/upptime>
