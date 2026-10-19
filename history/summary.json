@@ -22,17 +22,17 @@
     "url": "https://manual.manticoresearch.com/",
     "icon": "https://icons.duckduckgo.com/ip3/manual.manticoresearch.com.ico",
     "slug": "manual",
-    "status": "up",
-    "uptime": "87.05%",
-    "uptimeDay": "93.56%",
-    "uptimeWeek": "99.08%",
-    "uptimeMonth": "91.66%",
-    "uptimeYear": "87.05%",
-    "time": 1091,
-    "timeDay": 1134,
-    "timeWeek": 1022,
-    "timeMonth": 1241,
-    "timeYear": 1091,
+    "status": "down",
+    "uptime": "87.06%",
+    "uptimeDay": "94.18%",
+    "uptimeWeek": "99.17%",
+    "uptimeMonth": "91.69%",
+    "uptimeYear": "87.06%",
+    "time": 1085,
+    "timeDay": 955,
+    "timeWeek": 962,
+    "timeMonth": 1220,
+    "timeYear": 1085,
     "dailyMinutesDown": {
       "2026-08-18": 36,
       "2026-08-20": 23,
@@ -51,7 +51,7 @@
       "2026-09-22": 96,
       "2026-09-24": 81,
       "2026-10-09": 58,
-      "2026-10-19": 93
+      "2026-10-19": 84
     }
   },
   {
@@ -59,17 +59,17 @@
     "url": "https://manual.manticoresearch.com/dev/",
     "icon": "https://icons.duckduckgo.com/ip3/manual.manticoresearch.com.ico",
     "slug": "manual-dev",
-    "status": "up",
-    "uptime": "86.93%",
-    "uptimeDay": "93.59%",
-    "uptimeWeek": "99.08%",
-    "uptimeMonth": "91.66%",
-    "uptimeYear": "86.93%",
-    "time": 1020,
-    "timeDay": 1168,
-    "timeWeek": 1036,
-    "timeMonth": 1016,
-    "timeYear": 1020,
+    "status": "down",
+    "uptime": "86.94%",
+    "uptimeDay": "94.19%",
+    "uptimeWeek": "99.17%",
+    "uptimeMonth": "91.69%",
+    "uptimeYear": "86.94%",
+    "time": 1014,
+    "timeDay": 980,
+    "timeWeek": 974,
+    "timeMonth": 1001,
+    "timeYear": 1014,
     "dailyMinutesDown": {
       "2026-08-14": 77,
       "2026-08-18": 35,
@@ -90,7 +90,7 @@
       "2026-09-22": 96,
       "2026-09-24": 81,
       "2026-10-09": 57,
-      "2026-10-19": 93
+      "2026-10-19": 84
     }
   },
   {
@@ -194,11 +194,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/forum.manticoresearch.com.ico",
     "slug": "community-forum",
     "status": "up",
-    "uptime": "99.23%",
-    "uptimeDay": "93.62%",
-    "uptimeWeek": "99.09%",
-    "uptimeMonth": "99.22%",
-    "uptimeYear": "99.23%",
+    "uptime": "99.24%",
+    "uptimeDay": "94.20%",
+    "uptimeWeek": "99.17%",
+    "uptimeMonth": "99.24%",
+    "uptimeYear": "99.24%",
     "time": 1226,
     "timeDay": 794,
     "timeWeek": 816,
@@ -213,7 +213,7 @@
       "2026-09-21": 131,
       "2026-09-24": 63,
       "2026-10-09": 57,
-      "2026-10-19": 91
+      "2026-10-19": 83
     }
   },
   {
@@ -332,11 +332,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/catalog.manticoresearch.com.ico",
     "slug": "catalog-demo",
     "status": "up",
-    "uptime": "97.71%",
-    "uptimeDay": "93.64%",
-    "uptimeWeek": "99.09%",
-    "uptimeMonth": "98.47%",
-    "uptimeYear": "97.71%",
+    "uptime": "97.72%",
+    "uptimeDay": "94.22%",
+    "uptimeWeek": "99.17%",
+    "uptimeMonth": "98.49%",
+    "uptimeYear": "97.72%",
     "time": 1233,
     "timeDay": 992,
     "timeWeek": 898,
@@ -358,7 +358,7 @@
       "2026-09-30": 51,
       "2026-10-01": 176,
       "2026-10-09": 96,
-      "2026-10-19": 91
+      "2026-10-19": 83
     }
   },
   {
@@ -388,11 +388,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/catalog.manticoresearch.com.ico",
     "slug": "catalog-search",
     "status": "up",
-    "uptime": "97.39%",
-    "uptimeDay": "93.67%",
-    "uptimeWeek": "99.10%",
-    "uptimeMonth": "98.54%",
-    "uptimeYear": "97.39%",
+    "uptime": "97.40%",
+    "uptimeDay": "94.23%",
+    "uptimeWeek": "99.18%",
+    "uptimeMonth": "98.56%",
+    "uptimeYear": "97.40%",
     "time": 1683,
     "timeDay": 1178,
     "timeWeek": 1014,
@@ -414,7 +414,7 @@
       "2026-09-30": 42,
       "2026-10-01": 164,
       "2026-10-09": 87,
-      "2026-10-19": 91
+      "2026-10-19": 83
     }
   },
   {
@@ -453,7 +453,7 @@
     "status": "up",
     "uptime": "97.79%",
     "uptimeDay": "100.00%",
-    "uptimeWeek": "98.51%",
+    "uptimeWeek": "98.53%",
     "uptimeMonth": "97.65%",
     "uptimeYear": "97.79%",
     "time": 275,
