@@ -63,7 +63,7 @@
     "uptime": "87.14%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "99.17%",
-    "uptimeMonth": "95.24%",
+    "uptimeMonth": "95.25%",
     "uptimeYear": "87.14%",
     "time": 1015,
     "timeDay": 873,
@@ -281,17 +281,17 @@
     "url": "https://image.manticoresearch.com",
     "icon": "https://icons.duckduckgo.com/ip3/image.manticoresearch.com.ico",
     "slug": "image-search-demo",
-    "status": "down",
+    "status": "up",
     "uptime": "97.08%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.90%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "93.74%",
     "uptimeYear": "97.08%",
-    "time": 3695,
-    "timeDay": 19707,
-    "timeWeek": 10017,
-    "timeMonth": 5990,
-    "timeYear": 3695,
+    "time": 3671,
+    "timeDay": 17005,
+    "timeWeek": 9577,
+    "timeMonth": 5915,
+    "timeYear": 3671,
     "dailyMinutesDown": {
       "2026-09-05": 21,
       "2026-09-18": 195,
@@ -299,7 +299,7 @@
       "2026-10-05": 563,
       "2026-10-04": 1440,
       "2026-10-03": 717,
-      "2026-10-20": 0
+      "2026-10-20": 1
     }
   },
   {
