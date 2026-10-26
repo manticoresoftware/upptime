@@ -70,7 +70,7 @@ export const CHECKS: MonitorCheck[] = [
     "image-search-demo",
     "Image Search Demo",
     "https://image.manticoresearch.com",
-    "Manticore Reverse Image Search",
+    "Manticore Image Search Demo",
   ),
   page(
     "github",
