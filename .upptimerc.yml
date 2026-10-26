@@ -43,7 +43,7 @@ sites:
     __dangerous__body_down_if_text_missing: Flexible Faceted Search
   - name: Image Search Demo
     url: https://image.manticoresearch.com
-    __dangerous__body_down_if_text_missing: Manticore Reverse Image Search
+    __dangerous__body_down_if_text_missing: Manticore Image Search Demo
   - name: GitHub
     url: https://github.manticoresearch.com
     __dangerous__body_down_if_text_missing: Manticore Github Issue Search Demo
