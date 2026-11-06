@@ -1,0 +1,73 @@
+# This is a custom workflow; do not modify the Upptime-generated workflows.
+name: Show monitored URLs in README
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/show-monitored-urls.yml"
+      - "scripts/show_monitored_urls.py"
+      - "tests/test_show_monitored_urls.py"
+  workflow_run:
+    workflows: ["Summary CI", "Setup CI"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Share a concurrency group with Upptime, so README updates don't overlap.
+concurrency:
+  group: ${{ github.repository }}-${{ github.head_ref || github.ref_name }}-upptime
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Test README URL formatter
+        run: python3 -m unittest discover -s tests
+
+  update:
+    needs: test
+    if: >-
+      (github.event_name == 'workflow_dispatch' &&
+       github.ref_name == github.event.repository.default_branch) ||
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}
+    steps:
+      - name: Create GitHub App token
+        id: app_token
+        if: ${{ vars.GH_APP_ID != '' && env.GH_APP_PRIVATE_KEY != '' }}
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ vars.GH_APP_ID }}
+          private-key: ${{ env.GH_APP_PRIVATE_KEY }}
+      - name: Clear GitHub App private key
+        if: ${{ always() }}
+        shell: bash
+        run: echo "GH_APP_PRIVATE_KEY=" >> "$GITHUB_ENV"
+      - name: Checkout default branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          token: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
+      - name: Show exact monitored URLs in README
+        run: python3 scripts/show_monitored_urls.py
+      - name: Commit README if changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README URLs are already up to date"
+            exit 0
+          fi
+          git config user.name "Upptime Bot"
+          git config user.email "73812536+upptime-bot@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: Show monitored URLs in README [skip ci]"
+          git push
